@@ -1,4 +1,4 @@
-# playing-tshirt
+#Playing-TShirt
 Try using react-dnd.
 
-Able to drag on the T-Shirt (will be imprement in some point in the future...) to change color.
+Able to drag and drop color on the T Shirt (which might be done at some point in the future...) to change it's color.
