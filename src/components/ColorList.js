@@ -30,11 +30,6 @@ const ColorListContainer = styled.div`
 const Circle = ({ className, color }) => {
 	const [{ opacity }, drag] = useDrag({
 		item: { color, type: ItemTypes.COLOR },
-		end: dropResult => {
-			if (dropResult) {
-				// console.log(dropResult);
-			}
-		},
 		collect: monitor => {
 			return {
 				opacity: monitor.isDragging() ? 0.4 : 1
@@ -61,6 +56,10 @@ const StyledCircle = styled(Circle)`
 
 	&:hover {
 		transform: translateY(-5px);
+	}
+
+	&:active {
+		transform: translateY(-px) scale(0.96);
 	}
 `;
 
